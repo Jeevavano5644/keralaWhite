@@ -1,0 +1,78 @@
+body {
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .deskLogo {
+    display: none;
+  }
+  .navbar-nav {
+    display: grid;
+    grid-row-gap: 20px !important;
+    margin-left: 8%;
+  }
+}
+@media (min-width: 768px) {
+  .phoneLogo {
+    display: none;
+  }
+}
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.718) !important;
+  transform: scale(90%);
+  transition: 0.3s;
+}
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.home {
+  position: relative;
+  text-align: center;
+}
+.textCenter {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+.textCenter h3 {
+  color: rgb(225, 225, 43);
+  font-family: monospace;
+  animation-name: welcome;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+@keyframes welcome {
+  50% {
+    color: blue;
+  }
+}
+
+.textCenter button {
+  color: #ffa500;
+  background-color: rgba(255, 255, 255, 0.725);
+  border-radius: 2rem;
+  padding: 0.5rem;
+  padding-inline: 1rem;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.textCenter button:hover {
+  color: #ffa500;
+  background-color: white;
+  transition: 0.5s;
+}
+.about {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media (max-width: 576px) {
+  .grid1 {
+    padding: 0.4rem;
+  }
+}
+
+.grid1:hover {
+  transform: scale(90%);
+  transition: 0.5s;
+}
